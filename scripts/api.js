@@ -1,3 +1,5 @@
+/* global store */
+
 'use strict';
 
 const api = (function () {
@@ -5,7 +7,6 @@ const api = (function () {
 
   const getItems = function (callback) {
     $.getJSON(`${BASE_URL}/items`, callback);
-
   };
 
   const createItem = function (name, callback) {
